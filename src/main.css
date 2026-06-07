@@ -2,3 +2,25 @@
 html {
   scroll-behavior: smooth;
 }
+/* 1. Global Reset (Keep this universal so desktop and mobile behave the same) */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Prevent Horizontal Overflow ONLY on small screens */
+@media screen and (max-width: 768px) {
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Force media to shrink on small screens */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
