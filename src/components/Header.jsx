@@ -17,11 +17,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-5 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
-      }`}
-    >
+   <header
+  className={`fixed top-0 left-0 right-0 w-full overflow-x-hidden z-50 px-6 md:px-12 py-5 transition-all duration-300 ${
+    scrolled ? "bg-white shadow-sm" : "bg-transparent"
+  }`}
+>
       <div className="flex justify-between items-center">
 
         {/* Logo */}
@@ -64,7 +64,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden mt-4 bg-white shadow-md rounded-lg p-5">
+        <div className="md:hidden mt-4 bg-white shadow-md rounded-lg p-5 max-w-full overflow-hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((item) => (
               <li key={item}>
