@@ -27,7 +27,7 @@ function Home() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex gap-6 mb-10">
             <a
               href="#projects"
