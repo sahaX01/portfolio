@@ -5,7 +5,7 @@ import resume from "../assets/resume.pdf";
 function Home() {
   return (
     <div
-      className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-center"
+      className="pt-32 pb-20 px-6 md:px-12 bg-gradient-to from-gray-50 to-white min-h-screen flex items-center"
       id="home"
     >
       <div className="max-w-4xl">
